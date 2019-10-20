@@ -64,4 +64,4 @@ select distinct MK.nama_mk, count(j.kd_mkuliah) as jumlah
 from T_KRS2 j, DAFTAR_MATA_KULIAH MK
 where j.KD_MKULIAH=MK.KD_MKULIAH
 group by j.KD_MKULIAH, MK.nama_mk
-order by jumlah desc;
+order by jumlah
